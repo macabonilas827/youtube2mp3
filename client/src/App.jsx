@@ -45,17 +45,19 @@ dataTitle = title
      
       <form className="flex flex-col gap-2.5 w-4/6 h-[40vh] m-auto justify-end items-center pt-5 " onSubmit={handleSubmit}>
         
-      <h1 className="italic drop-shadow-sm text-4xl text-black font-black mb-20 z-10">YouTube2Mp3</h1>
-     <FaPlay className="absolute  top-5 h-28 w-28 z-1 opacity-80"  />
+      <h1 className="absolute top-0 left-0 p-2 italic drop-shadow-sm text-4xl  font-black mb-20 ">YouTube2Mp3</h1>
+     <FaPlay className="absolute  top-5 h-28 w-28 z-1"  />
       
       <div className="flex justify-center items-center absolute -bottom-5">
       <input className="w-72 p-3 rounded-l-2xl outline-none drop-shadow-md text-black text-xs" type="text" placeholder="youtube url"   onChange={(e) => setInputValue(e.target.value) }  />
-      <button className="p-3 rounded-r-2xl border border-indigo-100 bg-slate-200 drop-shadow-md text-black text-xs font-bold" type="submit">Convert</button>
+      <button className="p-3 rounded-r-2xl bg-slate-800 hover:bg-slate-900 drop-shadow-md text-white text-xs font-bold active:scale-x-105 transition-transform" type="submit">Convert</button>
       </div>
-
       </form>
+
+      <div className="flex flex-col justify-center items-center my-20">
       <h6>{dataTitle}</h6>
-     <button className="rounded-none  bg-black p-2"><a href={dataLink}>Download</a></button> 
+     <button className=" btn py-1 px-3 rounded-full"><a href={dataLink}>Download</a></button> 
+      </div>
     </div>
   )
 }
