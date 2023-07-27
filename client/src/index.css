@@ -14,7 +14,7 @@ body{
   display: inline-block;
   font-weight: 600;
   text-decoration: none;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.1em;
   background-color: rgb(30 41 59); 
   box-shadow: 0 10px 20px rgba( 255, 29, 27, 0.5), 0 6px 6px rgba( 255, 29, 27, 0.5), 0 0 100px -10px rgb(30 41 59);
   transition: transform 0.3s, box-shdaow 0.3s;
